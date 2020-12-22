@@ -12,9 +12,10 @@ const forecast = (latitude, longitude, callback) => {
         }
         else{
             const loc = body.current
+            console.log(loc)
             callback(undefined,
-                'Weather Updates.\nIt\'s '+ loc.weather_descriptions+'here. Temperature is '+loc.temperature+' , but it feels like '+
-                loc.feelslike)
+                loc.weather_descriptions+' today. Temperature is '+loc.temperature+' , but it feels like '+
+                loc.feelslike + '. Humidity is '+loc.humidity+'%.')
         }
     })
 }
