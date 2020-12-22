@@ -18,6 +18,7 @@ const geoCodeValue = (address,callback) => {
                 latitude:body.features[0].center[1],
                 longitude:body.features[0].center[0],
                 location:body.features[0].place_name
+                
             })
         }
     })

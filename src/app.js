@@ -60,7 +60,6 @@ app.get('/weather',(req,res)=>{
             if(error){
                 return res.send({error})
             }
-            
             res.send({Location: location,Forecast: forcastData})
         })
     })
@@ -80,5 +79,5 @@ app.get('*',(req,res)=>{
 
 
 app.listen(port, () => {
-    console.log("Server started on port 3000")
+    console.log("Server started on port"+port)
 })
